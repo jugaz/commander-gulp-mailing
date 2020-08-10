@@ -1,36 +1,14 @@
 {
   "name": "commander-gulp-mailing",
   "version": "1.0.0",
+  "description": "This project is created to compile Mailing",
+  "main": "./bin/mailing.js",
   "author": "Jesús Antonio Ugaz Vegas",
   "email":"jesusugazv@gmail.com",
+  "license": "ISC",
   "bin": {
     "commander-gulp-mailing": "bin/mailing.js"
   },
-  "scripts": {
-    "preinstall": "node bin/pre-cli-mailing.js",
-    "mailing": "node ./bin/mailing.js mailing \"frontend/src/templates/*.pug\" \"frontend/src/templates/**/*.pug\" --m \"docs/\"",
-    "deploy": "npm run templates && npm run styles && npm run images && npm run svg && gulp scripts",
-    "images": "commander-gulp-images images \"frontend/src/static/images/**/*.png\" \"frontend/src/static/images/**/*.jpg\" --im \"docs/images\"",
-    "predeploy": "rm -rdf \"docs/\" && mkdir -p \"docs/\"",
-    "server": "commander-gulp-server server \"8000\" --ser \"docs/\"",
-    "styles": "commander-gulp-styles scss \"frontend/src/static/styles/*.scss\" \"frontend/src/static/styles/**/*.scss\" --sc \"docs/styles\"",
-    "svg": "commander-gulp-images svg \"frontend/src/static/images/**/*.svg\" --sv \"docs/images/\"",
-    "templates": "commander-gulp-templates templates \"frontend/src/templates/*.pug\" \"frontend/src/templates/**/*.pug\" --t \"docs/\"",
-    "watch": "npm run watch-templates watch-styles",
-    "watch-sass": "commander-gulp-watch w-scss \"frontend/src/static/styles/*.scss\" \"frontend/src/static/styles/**/*.scss\" --wscss \"docs/styles/\"",
-    "watch-stylus": "commander-gulp-watch w-stylus \"frontend/src/static/styles/*.styl\" \"frontend/src/static/styles/**/*.styl\" --wstyl \"docs/styles/\"",
-    "watch-templates": "commander-gulp-watch w-templates \"frontend/src/templates/*.pug\"  \"frontend/src/templates/**/*.pug\" --wt \"docs/\""
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/jugaz/commander-gulp-mailing.git"
-  },
-  "directories": {
-    "doc": "docs"
-  },
- 
-  "license": "ISC",
-  "description": "This project is created to compile Mailing",
   "dependencies": {
     "autoprefixer": "^9.7.3",
     "chalk": "^4.1.0",
@@ -51,8 +29,28 @@
     "path": "^0.12.7",
     "rimraf": "^3.0.0"
   },
-
-  
+  "scripts": {
+    "preinstall": "node bin/pre-cli-mailing.js",
+    "mailing": "node ./bin/mailing.js mailing \"frontend/src/templates/*.pug\" \"frontend/src/templates/**/*.pug\" --m \"docs/\"",
+    "deploy": "npm run templates && npm run styles && npm run images && npm run svg && gulp scripts",
+    "images": "commander-gulp-images images \"frontend/src/static/images/**/*.png\" \"frontend/src/static/images/**/*.jpg\" --im \"docs/images\"",
+    "predeploy": "rm -rdf \"docs/\" && mkdir -p \"docs/\"",
+    "server": "commander-gulp-server server \"8000\" --ser \"docs/\"",
+    "styles": "commander-gulp-styles scss \"frontend/src/static/styles/*.scss\" \"frontend/src/static/styles/**/*.scss\" --sc \"docs/styles\"",
+    "svg": "commander-gulp-images svg \"frontend/src/static/images/**/*.svg\" --sv \"docs/images/\"",
+    "templates": "commander-gulp-templates templates \"frontend/src/templates/*.pug\" \"frontend/src/templates/**/*.pug\" --t \"docs/\"",
+    "watch": "npm run watch-templates watch-styles",
+    "watch-sass": "commander-gulp-watch w-scss \"frontend/src/static/styles/*.scss\" \"frontend/src/static/styles/**/*.scss\" --wscss \"docs/styles/\"",
+    "watch-stylus": "commander-gulp-watch w-stylus \"frontend/src/static/styles/*.styl\" \"frontend/src/static/styles/**/*.styl\" --wstyl \"docs/styles/\"",
+    "watch-templates": "commander-gulp-watch w-templates \"frontend/src/templates/*.pug\"  \"frontend/src/templates/**/*.pug\" --wt \"docs/\""
+  },
+  "directories": {
+    "doc": "docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jugaz/commander-gulp-mailing.git"
+  },
   "bugs": {
     "url": "https://github.com/jugaz/commander-gulp-mailing/issues"
   },
