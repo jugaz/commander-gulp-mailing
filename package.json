@@ -1,28 +1,8 @@
 {
   "name": "commander-gulp-mailing",
   "version": "1.0.0",
-  "description": "This project is created to compile Mailing",
-  "dependencies": {
-    "autoprefixer": "^9.7.3",
-    "chalk": "^4.1.0",
-    "commander": "^3.0.2",
-    "commander-gulp-images": "git+https://github.com/jugaz/commander-gulp-images.git",
-    "commander-gulp-server": "git+https://github.com/jugaz/commander-gulp-server.git",
-    "commander-gulp-styles": "git+https://github.com/jugaz/commander-gulp-styles.git",
-    "commander-gulp-templates": "git+https://github.com/jugaz/commander-gulp-templates.git",
-    "commander-gulp-watch": "git+https://github.com/jugaz/commander-gulp-watch.git",
-    "figlet": "^1.5.0",
-    "gulp": "^3.9.1",
-    "gulp-inline-css": "^3.5.0",
-    "gulp-inline-source": "^4.0.0",
-    "gulp-param": "^1.0.3",
-    "gulp-pug": "^4.0.1",
-    "gulp-sass": "^4.0.2",
-    "mkdirp": "^0.5.1",
-    "path": "^0.12.7",
-    "rimraf": "^3.0.0"
-  },
-
+  "author": "Jesús Antonio Ugaz Vegas",
+  "email":"jesusugazv@gmail.com",
   "bin": {
     "commander-gulp-mailing": "bin/mailing.js"
   },
@@ -48,9 +28,31 @@
   "directories": {
     "doc": "docs"
   },
-  "author": "Jesús Antonio Ugaz Vegas",
-  "email":"jesusugazv@gmail.com",
+ 
   "license": "ISC",
+  "description": "This project is created to compile Mailing",
+  "dependencies": {
+    "autoprefixer": "^9.7.3",
+    "chalk": "^4.1.0",
+    "commander": "^3.0.2",
+    "commander-gulp-images": "git+https://github.com/jugaz/commander-gulp-images.git",
+    "commander-gulp-server": "git+https://github.com/jugaz/commander-gulp-server.git",
+    "commander-gulp-styles": "git+https://github.com/jugaz/commander-gulp-styles.git",
+    "commander-gulp-templates": "git+https://github.com/jugaz/commander-gulp-templates.git",
+    "commander-gulp-watch": "git+https://github.com/jugaz/commander-gulp-watch.git",
+    "figlet": "^1.5.0",
+    "gulp": "^3.9.1",
+    "gulp-inline-css": "^3.5.0",
+    "gulp-inline-source": "^4.0.0",
+    "gulp-param": "^1.0.3",
+    "gulp-pug": "^4.0.1",
+    "gulp-sass": "^4.0.2",
+    "mkdirp": "^0.5.1",
+    "path": "^0.12.7",
+    "rimraf": "^3.0.0"
+  },
+
+  
   "bugs": {
     "url": "https://github.com/jugaz/commander-gulp-mailing/issues"
   },
