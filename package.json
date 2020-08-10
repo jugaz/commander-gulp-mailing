@@ -2,17 +2,6 @@
   "name": "commander-gulp-mailing",
   "version": "1.0.0",
   "description": "This project is created to compile Mailing",
-  "keywords": [
-    "build",
-    "commander mailing",
-    "commander",
-    "compile",
-    "gulp mailing",
-    "gulp-mailing",
-    "npm mailing",
-    "mailing",
-    "task mailing"
-  ],
   "dependencies": {
     "autoprefixer": "^9.7.3",
     "chalk": "^4.1.0",
@@ -55,6 +44,9 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jugaz/commander-gulp-mailing.git"
+  },
+  "directories": {
+    "doc": "docs"
   },
   "author": "Jesús Antonio Ugaz Vegas",
   "email":"jesusugazv@gmail.com",
