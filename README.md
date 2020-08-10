@@ -1,4 +1,4 @@
-# Commander Gulp Styles Dynamic
+# Commander Gulp Mailing Dynamic
 
 <p>This project is created to compile Mailing.</p>
  
