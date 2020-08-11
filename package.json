@@ -12,14 +12,13 @@
   "dependencies": {
     "autoprefixer": "^9.7.3",
     "chalk": "^4.1.0",
-    "commander": "^3.0.2",
     "commander-gulp-images": "git+https://github.com/jugaz/commander-gulp-images.git",
     "commander-gulp-server": "git+https://github.com/jugaz/commander-gulp-server.git",
     "commander-gulp-styles": "git+https://github.com/jugaz/commander-gulp-styles.git",
     "commander-gulp-templates": "git+https://github.com/jugaz/commander-gulp-templates.git",
     "commander-gulp-watch": "git+https://github.com/jugaz/commander-gulp-watch.git",
+    "commander": "^3.0.2",
     "figlet": "^1.5.0",
-    "gulp": "^3.9.1",
     "gulp-debug": "^4.0.0",
     "gulp-inline-css": "^3.5.0",
     "gulp-inline-source": "^4.0.0",
@@ -27,6 +26,7 @@
     "gulp-pug": "^4.0.1",
     "gulp-sass": "^4.0.2",
     "gulp-util": "^3.0.8",
+    "gulp": "^3.9.1",
     "mkdirp": "^0.5.1",
     "path": "^0.12.7",
     "rimraf": "^3.0.0"
