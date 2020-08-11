@@ -46,9 +46,6 @@
     "watch-stylus": "commander-gulp-watch w-stylus \"frontend/src/static/styles/*.styl\" \"frontend/src/static/styles/**/*.styl\" --wstyl \"docs/styles/\"",
     "watch-templates": "commander-gulp-watch w-templates \"frontend/src/templates/*.pug\"  \"frontend/src/templates/**/*.pug\" --wt \"docs/\""
   },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jugaz/commander-gulp-mailing.git"
