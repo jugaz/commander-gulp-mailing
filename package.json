@@ -6,7 +6,7 @@
   "author": "Jesús Antonio Ugaz Vegas",
   "license": "ISC",
   "bin": {
-    "commander-gulp-mailing": "bin/mailing.js"
+    "commander-gulp-mailing": "./bin/mailing.js"
   },
   "dependencies": {
     "autoprefixer": "^9.7.3",
@@ -31,7 +31,7 @@
     "rimraf": "^3.0.0"
   },
   "scripts": {
-    "preinstall": "node bin/pre-cli-mailing.js",
+    "preinstall": "node ./bin/pre-cli-mailing.js",
     "mailing": "node ./bin/mailing.js mailing \"frontend/src/templates/*.pug\" \"frontend/src/templates/**/*.pug\" --m \"docs/\"",
     "deploy": "npm run templates && npm run styles && npm run images && npm run svg && gulp scripts",
     "images": "commander-gulp-images images \"frontend/src/static/images/**/*.png\" \"frontend/src/static/images/**/*.jpg\" --im \"docs/images\"",
