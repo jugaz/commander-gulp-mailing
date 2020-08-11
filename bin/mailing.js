@@ -68,7 +68,7 @@ program
         });
         return gulp.src(input)
             .pipe(debug({
-                title: 'commader-gulp-mailing:'
+                title: 'commander-gulp-mailing:'
             }))
             .pipe(pug())
             .on('error', function (error) {
