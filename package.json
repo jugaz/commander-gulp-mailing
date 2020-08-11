@@ -20,12 +20,12 @@
     "figlet": "^1.5.0",
     "gulp": "^3.9.1",
     "gulp-debug": "^4.0.0",
-    "gulp-util": "^3.0.8",
     "gulp-inline-css": "^3.5.0",
     "gulp-inline-source": "^4.0.0",
     "gulp-param": "^1.0.3",
     "gulp-pug": "^4.0.1",
     "gulp-sass": "^4.0.2",
+    "gulp-util": "^3.0.8",
     "mkdirp": "^0.5.1",
     "path": "^0.12.7",
     "rimraf": "^3.0.0"
@@ -45,8 +45,8 @@
     "watch-stylus": "commander-gulp-watch w-stylus \"frontend/src/static/styles/*.styl\" \"frontend/src/static/styles/**/*.styl\" --wstyl \"docs/styles/\"",
     "watch-templates": "commander-gulp-watch w-templates \"frontend/src/templates/*.pug\"  \"frontend/src/templates/**/*.pug\" --wt \"docs/\""
   },
-  "publishConfig": { 
-    "registry": "https://npm.pkg.github.com/" 
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
   },
   "repository": {
     "type": "git",
