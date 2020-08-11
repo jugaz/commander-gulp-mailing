@@ -49,6 +49,7 @@
   "directories": {
     "doc": "docs"
   },
+  "publishConfig": { "registry": "https://npm.pkg.github.com/" },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jugaz/commander-gulp-mailing.git"
