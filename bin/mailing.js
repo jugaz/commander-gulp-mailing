@@ -22,7 +22,7 @@ var options = {};
 program
 
     .version(
-        'commander-gulp-mailing version: ' + require('../../commander-gulp-mailing2/package.json').version + '\n'
+        'commander-gulp-mailing version: ' + require('../package.json').version + '\n'
     )
     .option('-m, --mkdirp <path>', 'create folder', createFolder)
     .option('-r, --rimraf <path>', 'delete folder', deleteFolder)
