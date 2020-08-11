@@ -4,7 +4,8 @@
   "description": "This project is created to compile Mailing",
   "main": "./bin/mailing.js",
   "author": "Jesús Antonio Ugaz Vegas",
-  "license": "ISC",
+  "homepage": "https://github.com/jugaz/commander-gulp-mailing#readme",
+  "license": "MIT",
   "bin": {
     "commander-gulp-mailing": "./bin/mailing.js"
   },
@@ -52,8 +53,12 @@
     "type": "git",
     "url": "git+https://github.com/jugaz/commander-gulp-mailing.git"
   },
-  "bugs": {
-    "url": "https://github.com/jugaz/commander-gulp-mailing/issues"
-  },
-  "homepage": "https://github.com/jugaz/commander-gulp-mailing#readme"
+  "keywords": [
+    "mailing",
+    "gulp",
+    "commander-gulp-mailing",
+    "commander"
+  ]
+ 
+  
 }
