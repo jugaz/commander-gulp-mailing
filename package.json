@@ -4,7 +4,6 @@
   "description": "This project is created to compile Mailing",
   "main": "./bin/mailing.js",
   "author": "Jesús Antonio Ugaz Vegas",
-  "email":"jesusugazv@gmail.com",
   "license": "ISC",
   "bin": {
     "commander-gulp-mailing": "bin/mailing.js"
@@ -49,7 +48,9 @@
   "directories": {
     "doc": "docs"
   },
-  "publishConfig": { "registry": "https://npm.pkg.github.com/" },
+  "publishConfig": { 
+    "registry": "https://npm.pkg.github.com/" 
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jugaz/commander-gulp-mailing.git"
