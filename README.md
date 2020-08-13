@@ -28,6 +28,6 @@ $  commander-gulp-mailing mailing 'entry' --m 'ouput'
 
 ```bash
  "scripts": {
-    "mailing": "commander-gulp-mailing mailing mailing 'test/templates/*.pug' 'test/**/*.pug' --m 'build/mailing' "
+    "mailing": "commander-gulp-mailing mailing \"frontend/src/templates/*.pug\" \"frontend/src/templates/**/*.pug\" --m \"docs/\'"
   }
 ```
