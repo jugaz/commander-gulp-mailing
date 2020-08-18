@@ -59,7 +59,6 @@ program
     .action((input, options) => {
         var input = options.input || options.parent.rawArgs;
         var ouput = options.ouput || options.m;
-        console.log("input",input)
         input = input.filter(function (index, value) {
             if (index.slice((index.lastIndexOf(".") - 1 >>> 0) + 2) == "pug") {
                 return index;
