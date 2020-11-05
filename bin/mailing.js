@@ -6,7 +6,6 @@ var
     debug = require('gulp-debug'),
     gulp = require('gulp'),
     inlineCSS = require('gulp-inline-css'),
-    inlineSource = require('gulp-inline-source'),
     mkdirp = require('mkdirp'),
     path = require('path'),
     program = require('commander'),
@@ -56,7 +55,7 @@ function deleteFolder(dir) {
 program
     .command('mailing <input>')
     .option("--m [options]")
-    .action((input, options) => {
+    .action(async (input, options) => {
         var input = options.input || options.parent.rawArgs;
         var ouput = options.ouput || options.m;
         input = input.filter(function (index, value) {
@@ -81,7 +80,6 @@ program
 
 
             })
-            .pipe(inlineSource())
             .pipe(inlineCSS({
                 applyStyleTags: true,
                 applyLinkTags: true,

@@ -1,0 +1,38 @@
+body {
+    background-color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    width: 100%;
+}
+table {
+    border-spacing: 0;
+}
+table,
+td {
+    border-collapse: collapse;
+    mso-table-lspace: 0pt;
+    mso-table-rspace: 0pt;
+}
+.yshortcuts a {
+    border-bottom: none !important;
+}
+
+.bgcolor {
+    background: #000000;
+}
+
+.text-header {
+    color:#666666; 
+    font-family:Arial, Helvetica, sans-serif; 
+    font-size:12px; 
+    padding: 0px 0px 10px 0px;
+    display: inline-block;
+}
+
+.text-link {
+    font-family:Arial, Helvetica, sans-serif; 
+    font-size:12px; 
+    color:#0086c3;
+}
