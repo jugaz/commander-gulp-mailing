@@ -1,6 +1,6 @@
 {
   "name": "commander-gulp-mailing",
-  "description": "This project is created to compile Mailing",
+  "description": "Compilación de mailings dinámicamente",
   "version": "1.0.4",
   "main": "./bin/mailing.js",
   "author": "Jesús Antonio Ugaz Vegas",
