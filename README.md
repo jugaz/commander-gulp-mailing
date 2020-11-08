@@ -24,7 +24,7 @@ $  commander-gulp-mailing mailing 'entry' --m 'ouput'
 
 #### **Comando a ejecutar con Npm**
 
-```bash
+```html
  "scripts": {
     "mailing": "commander-gulp-mailing mailing \"frontend/src/mailing/*.pug\" \"frontend/src/mailing/**/*.pug\" --m \"docs/\'"
   }

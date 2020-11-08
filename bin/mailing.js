@@ -4,7 +4,10 @@
 
 var
     debug = require('gulp-debug'),
+    fs = require('fs'),
     gulp = require('gulp'),
+    dir = require('node-dir'),
+    inlinesource = require('gulp-inline-source'),
     inlineCSS = require('gulp-inline-css'),
     mkdirp = require('mkdirp'),
     path = require('path'),
@@ -12,6 +15,7 @@ var
     pug = require('gulp-pug'),
     rimraf = require('rimraf'),
     util = require('gulp-util');
+const { dirname } = require('path');
 
 /* ######################## OPTIONS ######################## */
 var options = {};
@@ -57,7 +61,10 @@ program
     .option("--m [options]")
     .action(async (input, options) => {
         var input = options.input || options.parent.rawArgs;
-        var ouput = options.ouput || options.m;
+        var output = options.output || options.m;
+
+       
+        
         input = input.filter(function (index, value) {
             if (index.slice((index.lastIndexOf(".") - 1 >>> 0) + 2) == "pug") {
                 return index;
@@ -80,15 +87,9 @@ program
 
 
             })
-            .pipe(inlineCSS({
-                applyStyleTags: true,
-                applyLinkTags: true,
-                removeStyleTags: true,
-                removeLinkTags: true,
-            }))
             
-      
-            .pipe(gulp.dest(ouput))
+            .pipe(inlineCSS())
+            .pipe(gulp.dest(output))
             .on('end', function () {
                 util.log('Done!');
             });;
