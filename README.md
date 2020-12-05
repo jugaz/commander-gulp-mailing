@@ -1,4 +1,5 @@
 # ***Commander Gulp Mailing Dynamic***
+<p>Compilación de mailings dinámicamente</p>
 
 ![commander: version (tag)](https://img.shields.io/badge/commander-v3.0.2-blue?style=for-the-badge)
 ![gulp: version (tag)](https://img.shields.io/badge/gulp-v3.9.1-orange?style=for-the-badge)
@@ -24,7 +25,7 @@ $  commander-gulp-mailing mailing 'entry' --m 'ouput'
 
 #### **Comando a ejecutar con Npm**
 
-```html
+```bash
  "scripts": {
     "mailing": "commander-gulp-mailing mailing \"frontend/src/mailing/*.pug\" \"frontend/src/mailing/**/*.pug\" --m \"docs/\'"
   }
