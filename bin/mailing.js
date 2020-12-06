@@ -38,7 +38,7 @@ program
 program
     .command('mailing <input>')
     .option("--m [options]")
-    .action(async (input, options) => {
+    .action((input, options) => {
         var input = options.input || options.parent.rawArgs;
         var output = options.output || options.m;
 
