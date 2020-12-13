@@ -1,7 +1,7 @@
 {
   "name": "commander-gulp-mailing",
   "description": "Compilación de mailings dinámicamente",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "main": "./bin/mailing.js",
   "author": "Jesús Antonio Ugaz Vegas",
   "homepage": "https://github.com/jugaz/commander-gulp-mailing#readme",

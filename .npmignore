@@ -5,6 +5,7 @@
 .git
 .hg
 .lock-wscript
+.npmrc
 .svn
 .wafpickle-*
 .wafpickle-N
@@ -12,6 +13,7 @@ CVS
 build/
 config.gypi
 dist/
-node_modules/
+node_modules
 npm-debug.log
 package-lock.json
+frontend/
