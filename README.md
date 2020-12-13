@@ -21,12 +21,16 @@ $ npm install commander-gulp-mailing
 $  commander-gulp-mailing mailing 'entry' --m 'ouput' 
 ```
 
+```bash
+$  commander-gulp-mailing prod:mailing 'entry' --m 'ouput' 
+```
 
 
 #### **Comando a ejecutar con Npm**
 
 ```bash
  "scripts": {
-    "mailing": "commander-gulp-mailing mailing \"frontend/src/mailing/*.pug\" \"frontend/src/mailing/**/*.pug\" --m \"docs/\'"
+    "mailing": "commander-gulp-mailing mailing \"frontend/src/mailing/*.pug\" \"frontend/src/mailing/**/*.pug\" --m \"docs/\'",
+    "prod:mailing": "commander-gulp-mailing prod:mailing \"frontend/src/mailing/*.pug\" \"frontend/src/mailing/**/*.pug\" --m \"docs/\'"
   }
 ```
