@@ -56,8 +56,6 @@ program
                 util.log("Error Line:", error.line);
                 util.log("Error Column:", error.column);
                 util.log("Error Msg", error.Msg);
-
-
             })
             
             .pipe(inlineCSS())
@@ -85,7 +83,7 @@ program
         });
         return src(input, { allowEmpty: true })
             .pipe(debug({
-                title: 'commander-gulp-mailing: production'
+                title: 'commander-gulp-mailing production:'
             }))
             .pipe(pug())
             .on('error', function (error) {
