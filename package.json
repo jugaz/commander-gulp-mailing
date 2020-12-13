@@ -1,7 +1,7 @@
 {
   "name": "commander-gulp-mailing",
   "description": "Compilación de mailings dinámicamente",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "main": "./bin/mailing.js",
   "author": "Jesús Antonio Ugaz Vegas",
   "homepage": "https://github.com/jugaz/commander-gulp-mailing#readme",
@@ -10,7 +10,6 @@
     "commander-gulp-mailing": "./bin/mailing.js"
   },
   "dependencies": {
-    "autoprefixer": "^9.8.6",
     "chalk": "^4.1.0",
     "commander": "^3.0.2",
     "figlet": "^1.5.0",
@@ -20,24 +19,16 @@
     "gulp-inline-css": "^4.0.0",
     "gulp-postcss": "^9.0.0",
     "gulp-pug": "^4.0.1",
+    "gulp-pug-beautify": "^0.0.1",
     "gulp-util": "^3.0.8"
   },
   "scripts": {
-    "deploy": "npm run templates && npm run styles && npm run images && npm run svg && gulp scripts",
-    "images": "commander-gulp-images images \"frontend/src/static/images/**/*.png\" \"frontend/src/static/images/**/*.jpg\" --im \"docs/images\"",
+    "dev": "npm run mailing",
+    "prod": "npm run prod:mailing",
+    "prod:mailing": "node ./bin/mailing.js prod:mailing \"frontend/src/mail/**/*.pug\" \"frontend/src/mail/*.pug\" --m \"docs/\"",
     "mailing": "node ./bin/mailing.js mailing \"frontend/src/mail/**/*.pug\" \"frontend/src/mail/*.pug\" --m \"docs/\"",
     "predeploy": "rm -rdf \"docs/\" && mkdir -p \"docs/\"",
-    "preinstall": "node ./bin/pre-cli-mailing.js",
-    "server": "commander-gulp-server server \"8000\" --ser \"docs/\"",
-    "scss": "node ./bin/mailing.js scss \"frontend/src/static/styles/*.scss\" \"frontend/src/static/styles/**/*.scss\" --sc \"docs/styles/\"",
-    "styl": "node ./bin/mailing.js stylus \"frontend/src/static/styles/*.styl\" \"frontend/src/static/styles/**/*.styl\" --st \"docs/styles/\"",
-    "less": "node ./bin/mailing.js stylus \"frontend/src/static/styles/*.styl\" \"frontend/src/static/styles/**/*.styl\" --st \"docs/styles/\"",
-    "svg": "commander-gulp-images svg \"frontend/src/static/images/**/*.svg\" --sv \"docs/images/\"",
-    "templates": "commander-gulp-templates templates \"frontend/src/templates/*.pug\" \"frontend/src/templates/**/*.pug\" --t \"docs/\"",
-    "watch": "npm run watch-templates watch-styles",
-    "watch-sass": "commander-gulp-watch w-scss \"frontend/src/static/styles/*.scss\" \"frontend/src/static/styles/**/*.scss\" --wscss \"docs/styles/\"",
-    "watch-stylus": "commander-gulp-watch w-stylus \"frontend/src/static/styles/*.styl\" \"frontend/src/static/styles/**/*.styl\" --wstyl \"docs/styles/\"",
-    "watch-templates": "commander-gulp-watch w-templates \"frontend/src/templates/*.pug\"  \"frontend/src/templates/**/*.pug\" --wt \"docs/\""
+    "preinstall": "node ./bin/pre-cli-mailing.js"
   },
   "repository": {
     "type": "git",
