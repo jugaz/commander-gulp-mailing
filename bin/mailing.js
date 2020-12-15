@@ -4,9 +4,9 @@
 
 const
     debug = require('gulp-debug'),
+    gulpPugBeautify = require('gulp-pug-beautify'),
     inlineCSS = require('gulp-inline-css'),
     path = require('path'),
-    gulpPugBeautify = require('gulp-pug-beautify'),
     program = require('commander'),
     pug = require('gulp-pug'),
     util = require('gulp-util'),
@@ -35,14 +35,12 @@ program
         var input = options.input || options.parent.rawArgs;
         var output = options.output || options.m;
 
-       
-        
         input = input.filter(function (index, value) {
             if (path.extname(index) == ".pug") {
                 return index;
             }
-
         });
+        
         return src(input, { allowEmpty: true })
             .pipe(debug({
                 title: 'commander-gulp-mailing:'
@@ -62,10 +60,9 @@ program
             .pipe(dest(output))
             .on('end', function () {
                 util.log('Done!');
-            });;
-        
-
+            });
     })
+
 program
     .command('prod:mailing <input>')
     .option("--m [options]")
@@ -73,14 +70,12 @@ program
         var input = options.input || options.parent.rawArgs;
         var output = options.output || options.m;
 
-       
-        
         input = input.filter(function (index, value) {
             if (path.extname(index) == ".pug") {
                 return index;
             }
-
         });
+
         return src(input, { allowEmpty: true })
             .pipe(debug({
                 title: 'commander-gulp-mailing production:'
@@ -94,8 +89,6 @@ program
                 util.log("Error Line:", error.line);
                 util.log("Error Column:", error.column);
                 util.log("Error Msg", error.Msg);
-
-
             })
            
             .pipe(inlineCSS())
@@ -103,7 +96,7 @@ program
             .pipe(dest(output))
             .on('end', function () {
                 util.log('Done!');
-            });;
+            });
         
 
     })

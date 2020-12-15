@@ -1,7 +1,7 @@
 {
   "name": "commander-gulp-mailing",
   "description": "Compilación de mailings dinámicamente",
-  "version": "1.0.9",
+  "version": "2.0.0",
   "main": "./bin/mailing.js",
   "author": "Jesús Antonio Ugaz Vegas",
   "homepage": "https://github.com/jugaz/commander-gulp-mailing#readme",
@@ -10,6 +10,7 @@
     "commander-gulp-mailing": "./bin/mailing.js"
   },
   "dependencies": {
+    "autoprefixer": "^9.8.6",
     "chalk": "^4.1.0",
     "commander": "^3.0.2",
     "figlet": "^1.5.0",
@@ -23,11 +24,6 @@
     "gulp-util": "^3.0.8"
   },
   "scripts": {
-    "dev": "npm run mailing",
-    "prod": "npm run prod:mailing",
-    "prod:mailing": "node ./bin/mailing.js prod:mailing \"frontend/src/mail/**/*.pug\" \"frontend/src/mail/*.pug\" --m \"docs/\"",
-    "mailing": "node ./bin/mailing.js mailing \"frontend/src/mail/**/*.pug\" \"frontend/src/mail/*.pug\" --m \"docs/\"",
-    "predeploy": "rm -rdf \"docs/\" && mkdir -p \"docs/\"",
     "preinstall": "node ./bin/pre-cli-mailing.js"
   },
   "repository": {
