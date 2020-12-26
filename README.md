@@ -1,4 +1,5 @@
-# ***Commander Gulp Mailing Dynamic***
+# Commander Gulp Mailing Dynamic
+<style>.markdown-body pre code {cursor:auto}</style>
 <p>Compilación de mailings dinámicamente</p>
 
 ![commander: version (tag)](https://img.shields.io/badge/commander-v3.0.2-blue?style=for-the-badge)
@@ -34,7 +35,9 @@ $ commander-gulp-mailing prod:mailing 'entry'  --m 'ouput'
 
 ```bash
   "scripts": {
-    "mailing": "commander-gulp-mailing mailing \"frontend/src/mailing/*.pug\" \"frontend/src/mailing/**/*.pug\" --m \"docs/\'",
-    "prod:mailing": "commander-gulp-mailing prod:mailing \"frontend/src/mailing/*.pug\" \"frontend/src/mailing/**/*.pug\" --m \"docs/\'"
+    "mailing": "commander-gulp-mailing mailing \"frontend/src/mailing/*.pug\" \"frontend/src/mailing/**/*.pug\" --m \"docs/\"",
+    "prod:mailing": "commander-gulp-mailing prod:mailing \"frontend/src/mailing/*.pug\" \"frontend/src/mailing/**/*.pug\" --m \"docs/\""
   }
 ```
+### Link
+https://jugaz.github.io/commander-gulp-mailing/
