@@ -41,8 +41,8 @@ program
             }
         });
 
-        if(input.length === 0 || input === "undefine" ||  path.extname(index) !== ".pug" ) {
-            return util.log("Error: No existe el archivo con el siguiente formato: '.pug'")
+        if(input.length === 0 || input === "undefine") {
+            return util.log("ERROR: No existe el archivo con el siguiente formato: '.pug'")
         }
 
         else {
@@ -84,8 +84,8 @@ program
             }
         });
 
-        if(input.length === 0 || input === "undefine" ||  path.extname(index) !== ".pug" ) {
-            return util.log("Error: No existe el archivo con el siguiente formato: '.pug'")
+        if(input.length === 0 || input === "undefine") {
+            return util.log("ERROR: No existe el archivo con el siguiente formato: '.pug'")
         }
 
         else {
